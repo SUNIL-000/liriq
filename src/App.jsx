@@ -1,12 +1,13 @@
 import React from 'react'
 import Navbar from './components/Layouts/Navbar'
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import Hero from './components/hero';
+import HeroSection from './components/HeroSection';
+
 const App = () => {
   return (
     <Router>
       <Navbar />
-      <Hero />
+      <HeroSection />
     </Router>
   )
 }
