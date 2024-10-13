@@ -1,5 +1,5 @@
 export const navItems = [
-    { name: "event spaces" },
-    { name: "our services" },
-    { name: "gallery view" },
+    { name: "event spaces",link:"#" },
+    { name: "our services",link:"#" },
+    { name: "gallery view",link:"#" },
 ]
