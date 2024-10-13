@@ -93,7 +93,7 @@ const Navbar = () => {
 
             <nav className='md:hidden  flex flex-col bg-white  items-start md:items-center font-normal capitalize  py-4 border-b '>
                 {/* Logo and menu */}
-                <div className='flex justify-between w-full px-12'>
+                <div className='flex justify-between items-center w-full px-12'>
                     <div><img src="/logo-svg.svg" className='rounded-md' height={40} width={40} alt="Liriq" /></div>
                     <p className='text-3xl cursor-pointer'
                         onClick={() => { setMobileNav(!mobileNav) }}
