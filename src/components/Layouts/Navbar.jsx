@@ -17,7 +17,7 @@ const Navbar = () => {
             <nav className='hidden md:flex z-20 md:flex-row relative justify-between items-start md:items-center font-normal capitalize px-20 py-4 border-b '>
                 {/* Logo and Links */}
                 <div className='flex flex-col md:flex-row gap-4 items-center justify-center '>
-                    <img src="/logo-transparent-svg.svg" className='h-12 bg-cover bg-center' alt="Liriq" />
+                    <img src="/logo-svg.svg" className='h-12 bg-cover rounded-md bg-center' alt="Liriq" />
                     <ul className={`${hamburger ? 'hidden' : 'flex'} md:flex relative flex-col md:flex-row gap-1 md:gap-4`}>
                         {navItems.map((data, index) => (
                             <li key={index} className='mb-4 md:mb-0 text-md font-semibold'>
@@ -94,7 +94,7 @@ const Navbar = () => {
             <nav className='md:hidden  flex flex-col bg-white  items-start md:items-center font-normal capitalize  py-4 border-b '>
                 {/* Logo and menu */}
                 <div className='flex justify-between w-full px-12'>
-                    <div><img src="/logo-svg.svg" height={40} width={40} alt="Liriq" /></div>
+                    <div><img src="/logo-svg.svg" className='rounded-md' height={40} width={40} alt="Liriq" /></div>
                     <p className='text-3xl cursor-pointer'
                         onClick={() => { setMobileNav(!mobileNav) }}
                     >{mobileNav ? <RxCross2 /> : <GiHamburgerMenu />}</p>
