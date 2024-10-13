@@ -15,10 +15,11 @@ const Hero = () => {
                 </div>
 
                 {/* //hero images section  */}
-                <div className='w-full '
-                ><img
-                        className='h-[35rem] w-full mt-3 bg-cover bg-no-repeat bg-current'
-                        src="/logo-svg.svg" alt='heroImage' /></div>
+                <div className='w-full '>
+                    <img className='h-[35rem] w-full mt-3 bg-cover bg-no-repeat bg-current'
+                    src="/logo-svg.svg" alt='heroImage' />
+
+                </div>
             </div>
         </>
     )

@@ -91,20 +91,21 @@ const Navbar = () => {
 
             {/* mobile nav */}
 
-            <nav className='md:hidden  flex flex-col   items-start md:items-center font-normal capitalize py-4 border-b '>
+            <nav className='md:hidden  flex flex-col bg-white  items-start md:items-center font-normal capitalize  py-4 border-b '>
                 {/* Logo and menu */}
-                <div className='flex justify-between w-full px-4'>
-                    <div><img src="/logo-transparent-svg.svg" height={40} width={40} alt="Liriq" /></div>
+                <div className='flex justify-between w-full px-12'>
+                    <div><img src="/logo-svg.svg" height={40} width={40} alt="Liriq" /></div>
                     <p className='text-3xl cursor-pointer'
                         onClick={() => { setMobileNav(!mobileNav) }}
                     >{mobileNav ? <RxCross2 /> : <GiHamburgerMenu />}</p>
                 </div>
 
-                <div className={`${mobileNav ? "flex" : "hidden"}  flex-col  gap-4 px-6 items-start justify-start  `}>
+                <div className={`${mobileNav ? "flex" : "hidden"} max-h-auto h-full bg-white z-50 flex-col mt-2 gap-4 px-12 items-start justify-start  `}>
                     <ul className={`flex-col  gap-1 `}>
                         {navItems.map((data, index) => (
                             <li key={index} className='mb-4 md:mb-0'>
-                                <Link to={data.link}>{data.name}</Link>
+                                <Link to={data.link} 
+                                onClick={()=>{setMobileNav(false)}}>{data.name}</Link>
                             </li>
                         ))}
                         <li
@@ -141,7 +142,7 @@ const Navbar = () => {
                             <div className='bg-gray-200 p-4 '>
                                 <h3 className='capitalize font-bold'>from our blog</h3>
                                 <div className='my-3 gap-3'>
-                                    <img src="/logo-png.png" className='h-[105px] w-[160px] mb-4' alt="demo_logo" />
+                                    <img src="/logo-png.png" className='h-[110px] w-[160px] mb-4' alt="demo_logo" />
                                     <h3 className='capitalize font-bold'>Event Success</h3>
                                     <p className='text-sm font-normal'>Tips for hosting unforgettable events.</p>
                                     <a href={"#"} className='underline'>Read more</a>
